@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
+
 namespace Weather_dz
 {
-    class Weather
+    public class Weather
     {
         private double temperature;
         private double humidity;
