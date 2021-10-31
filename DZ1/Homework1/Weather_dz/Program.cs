@@ -33,6 +33,24 @@ namespace Weather_dz
                 "Weather info:" + largestWindchill.GetTemperature() + ", " +
                 largestWindchill.GetHumidity() + ", " + largestWindchill.GetWindSpeed()
             );
+
+            Weather FindWeatherWithLargestWindchill(Weather [] weathers){
+
+                int index = 0;
+                double maxWindChill = weathers[0].CalculateWindChill();
+
+                for(int i = 0; i < weathers.Length; i++)
+                {
+                    if(maxWindChill < weathers[i].CalculateWindChill())
+                    {
+                        maxWindChill = weathers[i].CalculateWindChill();
+                        index = i;
+                    }
+                }
+
+                return weathers[index];
+
+            }
         }
     }
 }
