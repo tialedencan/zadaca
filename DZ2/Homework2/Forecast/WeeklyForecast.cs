@@ -8,7 +8,7 @@ namespace ForecastClassLibrary
     public class WeeklyForecast
     {
 
-        private DailyForecast[] sevenDaysForecast;
+        private DailyForecast[] sevenDaysForecast=new DailyForecast[7];
 
         public WeeklyForecast(DailyForecast[] sevenDaysForecast)
         {
@@ -56,6 +56,5 @@ namespace ForecastClassLibrary
             }
         }
 
-        //public DailyForecast WeeklyForecast() => sevenDaysForecast;
     }
 }

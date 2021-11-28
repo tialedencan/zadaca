@@ -9,9 +9,13 @@ namespace ForecastClassLibrary
 
         static public DailyForecast Parse(string dailyWeatherInput)
         {
-            var values = dailyWeatherInput.Split(",");
+            string[] values = dailyWeatherInput.Split(",");
             DateTime date=DateTime.Parse(values[0]);
-            Weather day = new Weather(double.Parse(values[1]), double.Parse(values[3]), double.Parse(values[2]));
+            double t = double.Parse(values[1].Replace(".",","));
+            double h = double.Parse(values[3].Replace(".",","));
+            double ws = double.Parse(values[2].Replace(".", ","));
+
+            Weather day = new Weather(t,h, ws);
             
             return new DailyForecast(date,day);
         }

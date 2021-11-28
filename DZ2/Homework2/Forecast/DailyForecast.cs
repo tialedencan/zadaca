@@ -21,7 +21,7 @@ namespace ForecastClassLibrary
         public Weather GetWeather() { return weather; }
         public string GetAsString()
         {
-            return $"{this.date.ToString()}: {this.weather.GetAsString()}";
+            return $"{this.date.ToString("dd/MM/yyyy HH:mm:ss")}: {this.weather.GetAsString()}";
             // 08/11/2021 00:00:00: T=6.17°C, w=4.9km/h, h=56.13%
         }
     }
