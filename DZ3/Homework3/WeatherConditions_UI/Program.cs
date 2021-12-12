@@ -1,22 +1,4 @@
 ﻿using System;
-/*U sustav za rad s informacijama o vremenskim prilikama trebate dodati klasu za generiranje vremenskih prilika 
-(generiranje instanci klase *Weather*). Ta nova klasa definira raspone vrijednosti unutar kojih će biti postavljane 
-vrijednosti atributa novostvorenih (generiranih) vremenskih prilika, generator pseudoslučajnih vrijednosti te metodu 
-za generiranje vremenskih prilika.
-
-Generator pseudoslučajnih vrijednosti treba biti predstavljen sučeljem *IRandomGenerator* koje ćete sami definirati, 
-a ono sadrži metodu koja omogućuje generiranje realne vrijednosti unutar raspona zadanog predanim argumentima. 
-Definirajte dva različita konkretna tipa generatora pseudoslučajnih vrijednosti. Prvi treba generirati vrijednosti
-unutar zadanog raspona prema uniformnoj razdiobi. Drugi predstavlja pristrani generator. Kod pristranog generatora,
-dvostruko je veća vjerojatnost generiranja vrijednosti u donjoj polovini raspona vrijednosti u odnosu na one iz gornje
-polovine (vidjeti dodatne upute). 
- 
-Također,  potrebno je omogućiti ispis sadržaja u aplikaciji korištenjem sučelja *IPrinter* s dvije konkretne implementacije, 
-konzolnom i datotečnom. Konzolnoj se inačici može zadati i naknadno izmijeniti boja teksta, dok se datotečnoj može zadati i 
-naknadno izmijeniti datoteka u koju će zapisivati. 
-
-Implementirajte sve potrebne klase i njihove metode kako bi se testni program u nastavku mogao ispravno izvesti. 
-*/
 
 using WeatherConditionsClassLibrary;
 
