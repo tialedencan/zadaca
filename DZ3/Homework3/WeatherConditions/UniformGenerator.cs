@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Text;
 
-/*https://reference.wolfram.com/language/ref/UniformDistribution.html */
 
 namespace WeatherConditionsClassLibrary
 {

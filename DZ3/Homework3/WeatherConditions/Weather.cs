@@ -10,12 +10,12 @@ namespace WeatherConditionsClassLibrary
         private double humidity;
         private double windSpeed;
 
-        public override string ToString() //bio GetAsString
+        public override string ToString() 
         {
             StringBuilder sb = new StringBuilder();
             sb.Append($"T={this.temperature}°C, w={this.windSpeed}km/h, h={this.humidity}% ");
             return sb.ToString();
-            //String.Format("T={0:0.00}°C, w={0:0.00}km/h, h={0:0.00}%", this.temperature, this.windSpeed, this.humidity);
+           
             //T=6.17°C, w=4.9km/h, h=56.13%
         }
 
