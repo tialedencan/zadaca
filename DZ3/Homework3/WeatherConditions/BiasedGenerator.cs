@@ -23,13 +23,10 @@ namespace WeatherConditionsClassLibrary
          public double GenerateRandomValue(double lowerValue, double upperValue) 
          {
 
-             double randomValue = generator.NextDouble(); //* (upperValue - lowerValue)/2 + lowerValue;
-             //int probability = 0;
-
-
-                 if (randomValue < 0.5)
+             double randomValue = generator.NextDouble(); 
+                 if (randomValue <= 0.66)
                  {
-                     return randomValue * (upperValue - lowerValue) / 2 + lowerValue;
+                     return randomValue * (upperValue/2 - lowerValue)  + lowerValue;
                  }
                  else { return randomValue * (upperValue - lowerValue) + lowerValue; }
 
