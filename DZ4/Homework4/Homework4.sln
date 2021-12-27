@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DailyForecast_UI", "DailyForecast_UI\DailyForecast_UI.csproj", "{97FE1FA4-3542-4E96-8E39-15E5E67925CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DailyForecastClassLibrary", "DailyForecastClassLibrary\DailyForecastClassLibrary.csproj", "{56A5C63F-0502-4AB9-A030-4750BA8971F3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97FE1FA4-3542-4E96-8E39-15E5E67925CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97FE1FA4-3542-4E96-8E39-15E5E67925CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97FE1FA4-3542-4E96-8E39-15E5E67925CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97FE1FA4-3542-4E96-8E39-15E5E67925CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56A5C63F-0502-4AB9-A030-4750BA8971F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56A5C63F-0502-4AB9-A030-4750BA8971F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56A5C63F-0502-4AB9-A030-4750BA8971F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56A5C63F-0502-4AB9-A030-4750BA8971F3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ED72384B-B891-4079-86E1-5FC5F9EFAA67}
+	EndGlobalSection
+EndGlobal
