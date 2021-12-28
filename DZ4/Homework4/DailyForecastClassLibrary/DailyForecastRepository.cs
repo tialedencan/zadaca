@@ -71,25 +71,7 @@ namespace DailyForecastClassLibrary
             }
 
         } 
-        /*int index = 0, flag = 0;
-
-            foreach (DailyForecast dailyforecast in list)
-            {
-                index = 0;
-
-                foreach (DailyForecast df in this.list)
-                {
-                    if (dailyforecast.GetTime() == df.GetTime())
-                    {
-                        this.list.Insert(index,dailyforecast);
-                        flag = 1;
-                    }
-                        
-                    
-                    index++;
-                }
-                this.list.Add(dailyforecast);
-            }*/
+ 
 
         public void Remove(DateTime time)
         {
@@ -117,16 +99,12 @@ namespace DailyForecastClassLibrary
             
             if (flag == 0)
             {
-                throw new NoSuchDailyWeatherException($"No daily forecast for {time} ", time);
+                throw new NoSuchDailyWeatherException($"No daily forecast for {time.Date} ", time);
             }
                 
         }
 
-       /* public DailyForecast GetEnumerator()
-        {
-            return new DailyForecast();
-        }
-       */
+       
         public override string  ToString()
         {
             list = list.OrderBy(it => it.GetTime()).ToList();
@@ -157,8 +135,6 @@ namespace DailyForecastClassLibrary
         }
 
         public object Current { get { return list[position]; } }
-
-    // => list[position]
 
     }
 }

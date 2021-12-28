@@ -31,8 +31,5 @@ namespace DailyForecastClassLibrary
             // 08/11/2021 00:00:00: T=6.17°C, w=4.9km/h, h=56.13%
         }
 
-       // public bool MoveNext() { return true; }
-
-        //public object Current { get { return new DailyForecast(); } }
     }
 }
